@@ -1,0 +1,54 @@
+# This program will ask the user to input two integers and will perform basic math calculations with the given inputs.
+#I have written this program in three ways, each with less lines of code than the last.
+
+"""(Please excuse the excessive comments. 
+I wrote them to help me review and understand my code more easily.)
+This is a longer way of writing this program.""" 
+
+# print("Enter two numbers to find their sum, difference, multiplication, and division.") #Title
+# #Create variables "input1" and "input2". These are still considered strings by default.
+input1 = input("Enter the first number:") 
+input2 = input("Enter the second number:") 
+print("=================================================================") #divider
+
+# #Cast input1 and input2 to the int type.
+print("Calculated!")
+x=int(input1) 
+y=int(input2)
+print("Sum:", x+y)
+print("Difference:", x-y)
+print("Multiplication:", x*y)
+print("Division:", x//y,", ", "Remainder:", x%y) #print "quotient, remainder" on the same line
+
+"""Notes: % is called Modulo and will print only the remainder form a division problem. 
+          / (floating-point division) will allow for answers in decimal form (floats), 
+          but // (floor division) will round to the nearest whole number."""
+
+
+"""====================================================================================================
+Now for a shorter way to execute this same program..."""
+
+print("Enter two numbers to find their sum, difference, multiplication, and division.")
+x = int(input("Enter the first number: "))
+y = int(input("Enter the second number: "))
+print("=================================================================")
+print("Calculated!")
+print(f"Sum: {x+y}") #used f-strings to make lines shorter and formatting easier
+print(f"Difference: {x-y}")
+print(f"Multiplication: {x*y}")
+print(f"Division: {x//y}, Remainder: {x%y}") 
+#no need for separate string with a comma and space between the quotient and remainder
+
+
+"""====================================================================================================
+I think I can make this even shorter..."""
+
+print("Enter two numbers to find their sum, difference, multiplication, and division.")
+x = int(input("Enter the first number: "))
+y = int(input("Enter the second number: "))
+print("=================================================================")
+print("Calculated!")
+print(f" Sum: {x+y}\n Difference: {x-y}\n Multiplication: {x*y}\n Division: {x//y}, Remainder: {x%y}") 
+#Now all the calculations are on a single line of code, making the entire program just 6 lines long!
+
+
